@@ -1260,15 +1260,15 @@ var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm
 		<script>
 	$(".adver_close").click(function(){
 		$(".footer").css({"padding-bottom":30})
-	})
+	});
 
 	jQuery(".inner3 .m-item .iFCB-pro").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:1,interTime:50,trigger:"click"});
 	jQuery(".inner4 .m-item .iFCB-pro").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:1,interTime:50,trigger:"click"});
 	jQuery(".inner #leftObj .iFCB-pro").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:1,interTime:50,trigger:"click"});
 
-	var DESIGN_LIST = $(".DESIGN_LIST")
-	var DESIGN_LIST_ul = DESIGN_LIST.find("ul")
-	var DESIGN_LIST_li = DESIGN_LIST_ul.find("li")
+	var DESIGN_LIST = $(".DESIGN_LIST");
+	var DESIGN_LIST_ul = DESIGN_LIST.find("ul");
+	var DESIGN_LIST_li = DESIGN_LIST_ul.find("li");
 	DESIGN_LIST.slide({
 		titCell: ".hd ul li", mainCell: ".bd ul", effect: "fade", autoPlay: true, vis: 1, autoPage: false, trigger: "click", pnLoop: true, startFun: function (i) {
 			var nid = $(".iFCB-S-DESIGN").attr("id");
@@ -1296,18 +1296,18 @@ var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm
             scrollTop: 0
         },
         300)
-    })
+    });
 	$(".bj i").click(function(){
 		$(".iFCB-bj,.bj").css({"width":40});
 		$(".bj .content+.clear").show("100");
 		$(".bj .content+.clear").css({right:0});
-	})  
+	});
 	$(".bj .content+.clear").click(function() {
 		$(".iFCB-bj,.bj").css({"width":100+"%"});
 		$(this).css({right:-40});
 		$(this).hide();
 	});
-})
+
 
 </script>
 
