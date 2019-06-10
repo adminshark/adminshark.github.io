@@ -341,11 +341,39 @@ $("#topNav").removeClass("nav_fixed");
                 </div>
                 <div class="clear"></div>
             </div>
-                    <div class='banner' id="banner">
-                <span class='left-shadow'></span><span class='right-shadow'></span><div>
-                    <script language='javascript'>bannerShow(7, 1920, 400, "5000", '6343')</script>
+                    <div class="banner" id="banner">
+                <span class="left-shadow"></span><span class="right-shadow"></span><div>
+                    <script language="javascript">bannerShow(7, 1920, 400, "5000", '6343')</script>
+    <div class="picBox">
+        <div class="hd">
+            <ul><li class="">1</li><li class="on">2</li></ul>
+        </div>
+        <div class="bd">           
+            <ul style="width: 1349px; height: 500px; position: relative;">
+                            <li style="background: url("http://www.sxblcp.com/u/3e80e9f2-5fd4-4967-b3ac-f04fe555d217/image/0636894496033386688.jpg") 50% 0px no-repeat; height: 500px; width: 1349px; position: absolute; left: 0px; top: 0px; display: none;">
+                                <a href="/info/73686.html" style="display:block;width:100%;height:100%; "></a>
+                            </li>
+                            <li style="background: url("http://www.sxblcp.com/u/3e80e9f2-5fd4-4967-b3ac-f04fe555d217/image/0636894496033386688.jpg") 50% 0px no-repeat; height: 500px; width: 1349px; position: absolute; left: 0px; top: 0px; display: list-item;">
+                                <a href="/info/67975.html" style="display:block;width:100%;height:100%; "></a>
+                            </li>
+                </ul> 
+                <span class="prev_box">
+                    <a class="prev"></a>
+                    <a class="next"></a>
+                </span>                
+        </div>
+    </div>
+    <script type="text/javascript">
+        var showBanner=function(){
+            if('true'=="true"){$('.picBox').slide({titCell:'.hd ul', mainCell:'.bd ul', autoPlay:true, autoPage:true, effect:'fold', easing:'swing', trigger:'mouseover', pnLoop:true, interTime:3000, delayTime:500 });}
+            else{$('.picBox').slide({mainCell:'.bd ul', autoPlay:true, autoPage:false, effect:'fold', easing:'swing', trigger:'mouseover', pnLoop:true, interTime:3000, delayTime:500 });}
+        }
+        showBanner();
+        $(window).resize(function () {showBanner();});
+</script>
 
-                </div><div class='blank-area'></div>
+
+                </div><div class="blank-area"></div>
             </div>
         
 
